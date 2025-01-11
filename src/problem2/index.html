@@ -1,27 +1,60 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fancy Form</title>
+  <link href="./src/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-  <!-- You may add more stuff here -->
-  <link href="style.css" rel="stylesheet" />
 </head>
+<body id="app">
 
-<body>
-
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
+  <form>
     <h5>Swap</h5>
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
+    <div>
+      <label for="input-amount">Amount to send</label>
+      <div class="bottom">
+        <div class="dropdown" id="dropdown-send">
+          <div class="dropdown-select" id="dropdown-select-send">
+            <span>Select Currency</span>
+          </div>
+          <div class="dropdown-options" id="dropdown-options-send">
+            <!-- Dynamic options will be populated here -->
+          </div>
+        </div>
+        <input id="input-amount" placeholder="Enter amount" type="number" lang="en" />
+      </div>
+    </div>
 
-    <label for="output-amount">Amount to receive</label>
-    <input id="output-amount" />
+    <div>
+      <label for="output-amount">Amount to receive</label>
+      <div class="bottom">
+        <div class="dropdown" id="dropdown-receive">
+          <div class="dropdown-select" id="dropdown-select-receive">
+            <span>Select Currency</span>
+          </div>
+          <div class="dropdown-options" id="dropdown-options-receive">
+            <!-- Dynamic options will be populated here -->
+          </div>
+        </div>
+        <input id="output-amount" placeholder="Enter amount" type="number"  lang="en"/>
+      </div>
 
-    <button>CONFIRM SWAP</button>
+    </div>
+    <div id="error">
+      <!-- Dynamic error message will be populated here -->
+    </div>
+    <button id="submit-button" type="submit">CONFIRM SWAP</button>
+    <div id="loading-spinner" class="loading-spinner" style="display:none;">
+      <div class="spinner"></div>
+    </div>
   </form>
-  <script src="script.js"></script>
-</body>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./src/script.js"></script>
+</body>
 </html>

@@ -1,10 +1,23 @@
-# 99Tech Code Challenge #1 #
+# 99Tech Code Challenge #1 
 
-Note that if you fork this repository, your responses may be publicly linked to this repo.  
-Please submit your application along with the solutions attached or linked.   
+# Problem 1
+- Please kindly open problem 1 folder
+- To run the function please kindly open terminal
+- Open the correct path which is the problem 1
+- Then run `node sum_to_n.js`
 
-It is important that you minimally attempt the problems, even if you do not arrive at a working solution.
+# Problem 2
+- Please kindly open problem 2 folder
+- Make sure you are on the correct path which is the problem2
+- Run `yarn` to install the vite project
+- Once the installation is done run `yarn vite`
+- For error flow, 
+- You can directly click submit button it will show error toast
+- You can enter alphabet on the input value to show error above below the input
 
-## Submission ##
-You can either provide a link to an online repository, attach the solution in your application, or whichever method you prefer.
-We're cool as long as we can view your solution without any pain.
+# Problem 3
+- Please kindly open problem3.tsx
+- I have put some comments regarding things that are refactored and why it's refactored
+
+
+
